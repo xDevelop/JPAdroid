@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">JPAdroid</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="signal_frequency">Signal Frequency</string>
+    <string name="pump_voltage">Pump Voltage</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="preference_use_quantum">Quantum Mechanical Description</string>
+    <string name="preference_use_quantum_summary">Using quantum mechanical description of the Josephson device.</string>
+    <string name="preference_use_classical_summary">Using classical description of the Josephson device.</string>
+
+    <string name="preference_show_photon">Show Photon Number</string>
+    <string name="preference_show_energy_summary">Showing energy number instead of photon number.</string>
+    <string name="preference_show_photon_summary">Showing photon number instead of energy.</string>
+
+    <string name="preference_auto_switch">Automatic Transitions</string>
+    <string name="preference_auto_switch_summary">Automatically change to plots after calculation.</string>
+    <string name="preference_man_switch_summary">Manually change tp plots after calculation.</string>
+
+    <string name="preference_signal_photon_number">Signal Photon Number</string>
+    <string name="preference_signal_photon_number_summary">Edit the initial value for the signal photon number.</string>
+
+    <string name="preference_idler_photon_number">Idler Photon Number</string>
+    <string name="preference_idler_photon_number_summary">Edit the initial value for the idler photon number.</string>
+
+    <string name="preference_q1">Signal Charge</string>
+    <string name="preference_q1_summary">Edit the initial value for the charge in the signal capacitor.</string>
+
+    <string name="preference_phi1">Signal Flux</string>
+    <string name="preference_phi1_summary">Edit the initial value for the flux in the signal inductor.</string>
+
+    <string name="preference_q2">Idler Charge</string>
+    <string name="preference_q2_summary">Edit the initial value for the charge in the idler capacitor.</string>
+
+    <string name="preference_phi2">Idler Flux</string>
+    <string name="preference_phi2_summary">Edit the initial value for the flux in the idler inductor.</string>
+
+    <string name="general_settings">General Settings</string>
+    <string name="initial_values">Initial Values</string>
+</resources>

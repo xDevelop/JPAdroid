@@ -1,0 +1,185 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    tools:context="de.tum.ei.nano.jpadroid.TableFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent"
+            android:id="@+id/webView_circuit"
+            />
+
+        <TextView
+            android:id="@+id/textViewLabelSignalFrequency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/seekBarSignalFrequency"
+            android:layout_alignLeft="@+id/textViewLabelPumpVoltage"
+            android:layout_alignStart="@+id/textViewLabelPumpVoltage"
+            android:text="Signal Frequency" />
+
+        <SeekBar
+            android:id="@+id/seekBarSignalFrequency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textViewSignalFrequency"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_toEndOf="@+id/textViewLabelSignalFrequency"
+            android:layout_toRightOf="@+id/textViewLabelSignalFrequency"
+            android:max="99" />
+
+        <TextView
+            android:id="@+id/textViewSignalFrequency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/webView_circuit"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textViewLabelPumpVoltage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/seekBarPumpVoltage"
+            android:layout_alignLeft="@+id/textViewLabelCriticalCurrent"
+            android:layout_alignStart="@+id/textViewLabelCriticalCurrent"
+            android:text="Pump Voltage" />
+
+        <SeekBar
+            android:id="@+id/seekBarPumpVoltage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/seekBarSignalFrequency"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignStart="@+id/seekBarSignalFrequency"
+            android:layout_below="@+id/textViewPumpVoltage"
+            android:layout_marginRight="15dp"
+            android:max="99" />
+
+        <TextView
+            android:id="@+id/textViewPumpVoltage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/seekBarSignalFrequency"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textViewLabelCriticalCurrent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/seekBarCriticalCurrent"
+            android:layout_alignLeft="@+id/textViewLabelSignalCapacitor"
+            android:layout_alignStart="@+id/textViewLabelSignalCapacitor"
+            android:text="Critical Current" />
+
+        <SeekBar
+            android:id="@+id/seekBarCriticalCurrent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/seekBarSignalFrequency"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignStart="@+id/seekBarSignalFrequency"
+            android:layout_below="@+id/textViewCriticalCurrent"
+            android:layout_marginRight="15dp"
+            android:max="99" />
+
+        <TextView
+            android:id="@+id/textViewCriticalCurrent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/seekBarPumpVoltage"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textViewLabelSignalCapacitor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/seekBarSignalCapacitor"
+            android:layout_alignLeft="@+id/textViewLabelIdlerCapacitor"
+            android:layout_alignStart="@+id/textViewLabelIdlerCapacitor"
+            android:text="Signal Capacitor" />
+
+        <SeekBar
+            android:id="@+id/seekBarSignalCapacitor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/seekBarSignalFrequency"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignStart="@+id/seekBarSignalFrequency"
+            android:layout_below="@+id/textViewSignalCapacitor"
+            android:layout_marginRight="15dp"
+            android:max="99" />
+
+        <TextView
+            android:id="@+id/textViewSignalCapacitor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/seekBarCriticalCurrent"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textViewLabelIdlerCapacitor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/seekBarIdlerCapacitor"
+            android:layout_marginLeft="15dp"
+            android:text="Idler Capacitor" />
+
+        <SeekBar
+            android:id="@+id/seekBarIdlerCapacitor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/seekBarSignalFrequency"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignStart="@+id/seekBarSignalFrequency"
+            android:layout_below="@+id/textViewIdlerCapacitor"
+            android:layout_marginRight="15dp"
+            android:max="99" />
+
+        <TextView
+            android:id="@+id/textViewIdlerCapacitor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/seekBarSignalCapacitor"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:text="0" />
+
+    </RelativeLayout>
+</ScrollView>
