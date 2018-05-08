@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    buildToolsVersion '27.0.3'
     defaultConfig {
         applicationId "de.tum.ei.nano.jpadroid"
         minSdkVersion 16
@@ -22,16 +22,16 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
-    compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.android.support:design:25.3.1'
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'com.android.support:support-v4:25.3.1'
-    compile 'com.jjoe64:graphview:4.2.1'
-    compile 'com.github.PhilJay:MPAndroidChart:v3.0.2'
-    testCompile 'junit:junit:4.12'
-    compile files('libs/commons-math3-3.6.1.jar')
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    //androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    //    exclude group: 'com.android.support', module: 'support-annotations'
+    //})
+    api 'com.android.support:appcompat-v7:25.3.1'
+    api 'com.android.support:design:25.3.1'
+    api 'com.android.support.constraint:constraint-layout:1.0.2'
+    api 'com.android.support:support-v4:25.3.1'
+    api 'com.jjoe64:graphview:4.2.1'
+    api 'com.github.PhilJay:MPAndroidChart:v3.0.2'
+    testImplementation 'junit:junit:4.12'
+    api files('libs/commons-math3-3.6.1.jar')
 }
